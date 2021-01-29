@@ -6,7 +6,6 @@ def model_analyze(log):
   # label - имя графика в легенде
   plt.plot(log.history['accuracy'], 
           label='Доля верных ответов на обучающем наборе')
-  print(log.history.keys())
   # Выводим график точности на проверочной выборке
   plt.plot(log.history['val_accuracy'], 
           label='Доля верных ответов на проверочном наборе')
